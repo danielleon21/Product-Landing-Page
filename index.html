@@ -4,25 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@400;700;900&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
     <title>Product Landing Page - FreeCodeCamp</title>
   </head>
   <body>
-    <!--TODO 1.Your product landing page should have a header element with a corresponding id="header"-->
-    <!--TODO 2.You can see an image within the header element with a corresponding id="header-img" (A logo would make a good image here)-->
-    <!--TODO 3.Within the #header element, you can see a nav element with a corresponding id="nav-bar"-->
-    <!--TODO 4.You can see at least three clickable elements inside the nav element, each with the class nav-link-->
-    <!--TODO 5.When you click a .nav-link button in the nav element, you are taken to the corresponding section of the landing page-->
     <!--TODO 6.You can watch an embedded product video with id="video"-->
-    <!--TODO 7.Your landing page has a form element with a corresponding id="form"-->
-    <!--TODO 8.Within the form, there is an input field with id="email" where you can enter an email address-->
-    <!--TODO 9.The #email input field should have placeholder text to let users know what the field is for-->
-    <!--TODO 10.The #email input field uses HTML5 validation to confirm that the entered text is an email address-->
-    <!--TODO 11.Within the form, there is a submit input with a corresponding id="submit"-->
-    <!--TODO 12.When you click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit)-->
-    <!--TODO 13.The navbar should always be at the top of the viewport-->
-    <!--TODO 14.Your product landing page should have at least one media query-->
-    <!--TODO 15.Your product landing page should utilize CSS flexbox at least once-->
 
-    <header id="header"></header>
+    <header id="header">
+      <img
+        id="header-img"
+        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+        alt="hero-image"
+      />
+      <nav id="nav-bar">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#how_it_works" class="nav-link">How It Works</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+      </nav>
+    </header>
+    <div class="hero">
+      <h2>Handcrafted, home-made masterpieces</h2>
+      <form action="https://www.freecodecamp.com/email-submit)" id="form">
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email address"
+          required
+        />
+        <input type="submit" value="get started" id="submit" />
+      </form>
+    </div>
+    <section id="features">
+      <div class="feature">
+        <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+      </div>
+      <div class="feature">
+        <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+      </div>
+    </section>
   </body>
 </html>
