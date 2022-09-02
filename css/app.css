@@ -3,6 +3,7 @@
   --blanco: #ffffff;
   --negro: #111111;
   --grisClaro: #eeeeee;
+  --grisOscuro: #dddddd;
   --amarillo: #f1c40f;
   --naranja: #ff8c00;
 
@@ -157,5 +158,42 @@ body {
 #how_it_works > iframe {
   max-width: 53rem;
   width: 100%;
+  margin: 2rem;
+}
+
+#pricing {
+  margin-top: 5rem;
+}
+
+.product {
+  max-width: 35rem;
+  background-color: var(--grisClaro);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+  border: 1px solid var(--negro);
+}
+
+.product h3 {
+  padding: 2rem;
+  background-color: var(--grisOscuro);
+  width: 100%;
+  margin: 0;
+}
+
+.product h2.price {
+  margin: 3rem 0 0 0;
+  font-weight: 900;
+}
+
+.product ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 2rem;
+}
+
+.product a {
   margin: 2rem;
 }
