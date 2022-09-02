@@ -1,0 +1,161 @@
+/* Globales */
+:root {
+  --blanco: #ffffff;
+  --negro: #111111;
+  --grisClaro: #eeeeee;
+  --amarillo: #f1c40f;
+  --naranja: #ff8c00;
+
+  --fuentaPrincipal: "Inconsolata", monospace;
+  --fuenteSecundaria: "Lato", sans-serif;
+
+  --separacion: 5rem;
+}
+
+html {
+  font-size: 62.5%; /* makes 1 rem 10px*/
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 1rem 0 2.5rem 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration-color: transparent;
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.btn {
+  color: var(--blanco);
+  font-size: 2rem;
+  text-transform: uppercase;
+  background-color: var(--amarillo);
+  padding: 0.5rem 2rem;
+  border: 1px solid var(--negro);
+  transition: background-color 300ms;
+}
+
+.btn:hover {
+  background-color: #caa40e;
+}
+
+/* Utilities */
+.text-center {
+  text-align: center;
+}
+
+body {
+  font-family: var(--fuentaPrincipal);
+  font-size: 1.6rem;
+  line-height: 1.8;
+  background-color: var(--grisClaro);
+}
+
+#header {
+  position: sticky;
+  top: 0;
+  background-color: var(--grisClaro);
+}
+
+#header img {
+  width: 60%;
+  margin: 1rem auto;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+#nav-bar a {
+  color: var(--negro);
+  font-size: 1.8rem;
+  transition: text-decoration-color 300ms;
+}
+
+#nav-bar a:hover {
+  text-decoration-color: var(--negro);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.hero h2 {
+  font-size: 2.4rem;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#form input:not(#submit) {
+  width: 30rem;
+  padding: 1rem;
+}
+
+#features {
+  margin-top: 5rem;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.icon {
+  text-align: center;
+  color: var(--naranja);
+}
+
+.fa-3x {
+  font-size: 3rem;
+}
+
+#how_it_works {
+  display: flex;
+  justify-content: center;
+}
+
+#how_it_works > iframe {
+  max-width: 53rem;
+  width: 100%;
+  margin: 2rem;
+}
